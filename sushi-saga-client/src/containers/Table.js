@@ -2,6 +2,14 @@ import React, { Fragment } from 'react'
 
 const Table = (props) => {
 
+  // constructor(){
+  //   super()
+  //   state = {
+  //     money: 100
+  //   }
+  // }
+  //apparently I can't make a constructor method here.
+
   const renderPlates = (array) => {
     return array.map((x, index) => {
       return <div className="empty-plate" style={{ top: -7 * index }}/>
@@ -16,8 +24,8 @@ const Table = (props) => {
       <div className="table">
         <div className="stack">
           {
-            /* 
-               renderPlates takes an array 
+            /*
+               renderPlates takes an array
                and renders an empty plate
                for every element in the array
             */
